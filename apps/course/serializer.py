@@ -9,4 +9,3 @@ class CursoSerializer(serializers.ModelSerializer):
         fields = '__all__'
         
         
-#Prueba
