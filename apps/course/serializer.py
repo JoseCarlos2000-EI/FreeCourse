@@ -7,3 +7,6 @@ class CursoSerializer(serializers.ModelSerializer):
     class Meta:
         model = Curso
         fields = '__all__'
+        
+        
+#Prueba
