@@ -21,7 +21,7 @@ from django.urls import include,path
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('curso/', include(('apps.course.urls', 'apps.course'), namespace='curso')),
+    path('', include(('apps.course.urls', 'apps.course'), namespace='curso')),
     path('api-auth/', include('rest_framework.urls'))
 ] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
 
