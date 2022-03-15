@@ -1,12 +1,197 @@
-{% load static %}
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <title>Home</title>
-  <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;1,200&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="../css/normalize.css">
+  <link rel="stylesheet" href="../css/styles.css">
+  <title>Cursos Web</title>
 </head>
+
 <body>
 
+  <header>
+
+    <nav>
+      <div class="nav container">
+        <div class="nav__container">
+          <div class="nav__logo">
+            <a href="index.html">
+              <img class="nav__image" src="../img/Logo1.png" alt="logo">
+            </a>
+          </div>
+
+          <div>
+            <a class="nav__link" href="">Inicio</a>
+            <a class="nav__link" href="">Cursos</a>
+          </div>
+
+          <div>
+            <input type="search" placeholder="¿Qué deseas aprender hoy?" class="nav__search">
+          </div>
+
+        </div>
+        <!--.nav__container-->
+
+      </div>
+      <!--.nav-->
+
+    </nav>
+
+    <div class="header container header__grid ">
+
+      <div>
+        <img class="header__image" src="../img/header2.png" alt="foto de perfil">
+      </div>
+
+      <div>
+        <h1 class="header__heading">Lorem <span>Ipsum</span></h1>
+        <p class="header__text">
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veniam porro unde, hic it
+          aque sed dignissimos dolor animi cumque libero maxime repellat.
+        </p>
+        <div>
+
+          <a class="descargar" target="_blank">Lorem Ipsum</a>
+        </div>
+
+      </div>
+      <!--.texto-->
+
+    </div>
+    <!--.header-grid-->
+  </header>
+
+  <section class="plus">
+    <div class="plus__container">
+
+      <div class="plus__seccion">
+        <img class="plus__image" src="../img/cloud.png" alt="">
+        <p class="plus__text">Lorem ipsum dolor</p>
+      </div>
+
+      <div class="plus__seccion">
+        <img class="plus__image" src="../img/cloud.png" alt="">
+        <p class="plus__text">Lorem ipsum dolor</p>
+      </div>
+
+      <div class="plus__seccion">
+        <img class="plus__image" src="../img/cloud.png" alt="">
+        <p class="plus__text">Lorem ipsum dolor</p>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="categories container ">
+    <h3 class="categories__heading ">Categorías</h3>
+
+    <div class="categories__container ">
+
+      <div class="categories__duo">
+        <div class="categorie">
+          <img class="categorie__image" src="../img/git.png" alt="">
+          <p class="categorie__text">Lorem Ipsum</p>
+        </div>
+
+
+        <div class="categorie ">
+          <img class="categorie__image" src="../img/git.png" alt="">
+          <p class="categorie__text">Lorem Ipsum</p>
+        </div>
+
+      </div>
+
+      <div class="categories__duo" >
+
+        <div class="categorie">
+          <img class="categorie__image" src="../img/git.png" alt="">
+          <p class="categorie__text">Lorem Ipsum</p>
+        </div>
+
+
+        <div class="categorie">
+          <img class="categorie__image" src="../img/git.png" alt="">
+          <p class="categorie__text">Lorem Ipsum</p>
+        </div>
+      </div>
+
+
+      <div class="categories__duo">
+        <div class="categorie">
+          <img class="categorie__image" src="../img/git.png" alt="">
+          <p class="categorie__text">Lorem Ipsum</p>
+        </div>
+
+        <div class="categorie">
+          <img class="categorie__image" src="../img/git.png" alt="">
+          <p class="categorie__text">Lorem Ipsum</p>
+        </div>
+      </div>
+
+ <div class=categories__duo>
+
+      <div class="categorie">
+        <img class="categorie__image" src="../img/git.png" alt="">
+        <p class="categorie__text">Lorem Ipsum</p>
+      </div>
+
+
+      <div class="categorie">
+        <img class="categorie__image" src="../img/git.png" alt="">
+        <p class="categorie__text">Lorem Ipsum</p>
+      </div>
+    </div>
+
+    </div>
+
+  </section>
+
+  <main class="container">
+    <h2 class="heading">Los mejores cursos de Desarrollo Web</h2>
+    <div class="course container">
+      <img class="course__image" src="../img/course.png" alt="">
+      <div class="course__content">
+        <div class="calificacion">
+         <img class="course__star" src="../img/star.png" alt="calificacion">
+        <p class="course__points">(5,5)</p>
+      </div>
+      <h3 class="heading__course">JS Course</h3>
+      <p class="course__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis porro, debitis at numquam perspiciatis provident.</p>
+      <div class="aa">
+        <button class="course__button" type="button"">Conseguir</button>
+      </div>
+      
+      </div>
+      
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div>
+      <a href="">
+        <img class="footer__logo" src="../img/Logo2.png" alt="">
+      </a>
+    </div>
+    <div class="footer__nav">
+      <a class="footer__link" href="#">Inicio</a>
+      <a class="footer__link" href="#">Cursos</a>
+    </div>
+
+
+
+  </footer>
+
+  <div class="footer__bg">
+    <p class="footer__text">Todos los derechos reservados &copy;</p>
+  </div>
+
 </body>
+
 </html>
