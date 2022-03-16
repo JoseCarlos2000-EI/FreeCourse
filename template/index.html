@@ -1,12 +1,100 @@
-{% load static %}
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <title>Home</title>
-  <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;1,200&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="../css/normalize.css">
+  <link rel="stylesheet" href="../css/styles.css">
+  <title>Cursos Web</title>
 </head>
+
 <body>
 
+  <header>
+    <header class="header container">
+      <div>
+        <a href="index.html">
+          <img class="header__logo" src="../img/Logo1.png" alt="logo">
+        </a>
+      </div>
+
+      <nav class="nav">
+        <a href="#" class="nav__link ">Inicio</a>
+        <a href="#" class="nav__link">Cursos Gratis</a>
+        <a href="#" class="nav__link">Registrarse</a>
+      </nav>
+    </header>
+
+    <section class="hero">
+
+      <h1 class="hero__text">Lorem ipsum dolor sit amet consectetur adipisicing</h1>
+      <a href="#" class="hero__link">Obtener Cursos</a>
+
+    </section>
+
+    <section class="search">
+      <h2 class="search__heading">Busca tu curso de preferencia</h2>
+      <div class="container">
+        <form class="form">
+          <select class="form__seccion">
+            <option>Programación</option>
+            <option>Diseño</option>
+            <option>Negocios</option>
+            <option>Emprendimiento</option>
+            <option>Marketing</option>
+          </select>
+          <input type="text" class="form__seccion" placeholder="Nombre del curso">
+          <input type="text" class="form__seccion" placeholder="Idioma">
+          <input type="submit" class="form__submit" value="Buscar">
+        </form>
+      </div>
+    </section>
+
+    </section>
+
+    <main class="container">
+      <div class="list__course">
+        <h2 class="heading">Los mejores cursos de <span>Desarrollo Web</span></h2>
+        <div class="course ">
+          <img class="course__image" src="../img/course.png" alt="">
+          <div class="course__content">
+            <div class="calificacion">
+              <img class="course__star" src="../img/star.png" alt="calificacion">
+              <p class="course__points">(5,5)</p>
+            </div>
+            <h3 class="heading__course">JS Course</h3>
+            <p class="course__text">Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
+            <div>
+              <button class="course__button" type="submit"">Conseguir</button>
+      </div>
+        
+      </div>
+    </div> <!--.course-->
+
+    </div> <!--.list__coure-->
+  </main>
+
+<footer class=" footer">
+  <div>
+    <a href="">
+      <img class="footer__logo" src="../img/Logo2.png" alt="">
+    </a>
+  </div>
+  <div class="footer__nav">
+    <a class="footer__link" href="#">Inicio</a>
+    <a class="footer__link" href="#">Cursos</a>
+  </div>
+</footer>
+<div class="footer__bg">
+  <p class="footer__text">Todos los derechos reservados &copy;</p>
+</div>
+
 </body>
+
 </html>
