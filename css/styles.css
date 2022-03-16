@@ -3,7 +3,7 @@
     --primario: #845EC2;
     --secundary: #ff6701;
     --black: #041735;
-    --gray: #d1dae4ef;
+    --gray: #f2f2f2;
     --font: "Poppins", sans-serif;
 
 }
@@ -68,6 +68,7 @@ html {
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding: 2rem 0;
   }
 
   @media(min-width: 768px){
@@ -78,26 +79,108 @@ html {
   }
   .header__logo{
     width: 25rem;
+    margin-bottom: 2rem;
   }
-.navegacion{
+.nav{
   display: flex;
   flex-direction: column;
   align-items: center;
-
 }
 @media (min-width: 768px){
-  .navegacion{
+  .nav{
     flex-direction: row;
     gap: 2rem;
   }
 }
-.navegacion__enlace{
+.nav__link{
   margin-bottom: 2rem;
   font-size: 1.4rem;
   display: flex;
   align-items: center;
 }
 
+
+.hero{
+  margin-top: 2rem;
+min-height: 60rem;
+background-image: url(../img/hero.jpg);
+background-size: cover;
+background-position: center;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+text-align: center;
+
+}
+.hero__text{
+color: #FFF;
+max-width: 60rem;
+}
+.hero__link{
+  background-color: var(--primario);
+    padding: 1.5rem 4rem;
+    color: #FFF;
+    margin-top: 2rem;
+    font-size: 2rem;
+    font-weight: 400;
+    display: inline-block;
+    font-weight: 700;
+    border: none;
+    transition-property: background-color;
+    transition-duration: .3s;
+    
+}
+
+.busqueda{
+  background-color: #F2F2F2;
+  padding: 5rem 0;
+}
+.busqueda__heading{
+  text-align: center;
+  margin: 0;
+}
+
+.formulario{
+display: flex;
+flex-direction: column;
+margin-top: 2rem;
+}
+
+@media (min-width: 768px){
+  .formulario{
+    display: grid;
+    grid-template-columns: repeat(4,2fr);
+    column-gap: 2rem;
+  }
+}
+
+.formulario__campo{
+  padding: 1rem;
+  border: 1px solid var(--gray);
+  margin-bottom: 2rem;
+
+}
+
+@media(min-width: 768px){
+  .formulario__campo{
+    margin-bottom: 0;
+  }
+}
+.formulario__submit{
+  background-color: var(--primario);
+  padding: 1.5rem 4rem;
+  color: #FFF;
+  margin-top: 2rem;
+  font-size: 2rem;
+  font-weight: 400;
+  display: inline-block;
+  font-weight: 700;
+  border: none;
+  transition-property: background-color;
+  transition-duration: .3s;
+  margin-top: 0;
+}
 
 .course{
 color: var(--black);
